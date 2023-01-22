@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap');
+
+
+body{
+    background: linear-gradient(275deg, #22577A 0%, #80ED99 100%);
+    font-family: 'Fragment Mono', monospace;
+    padding: 0; 
+    margin: 0;
+    height: 43.5vw;
+}
+body>h1{
+    text-align: center;
+    color: white;
+}
+.eyes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 1vw;
+}
+.eye{
+    width: 4vw;
+    height: 4vw;
+    border-radius: 2vw;
+    background: white;
+    margin-left: 0.5vw;
+    position: relative;
+}
+.eye-center{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0.6vw;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 1vw;
+    background-color: black;
+}
+.contaniner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5vw auto;
+    padding: 7vw 9vw;
+    background: #38A3A5;
+    width: 31vw;
+    position: relative;
+    border-radius: 5vw;
+}
+#addTaskInput{
+    padding: 1vw;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #22577A;
+    font-size: 1vw;
+}
+#addTaskInput::placeholder{
+    color: white;
+    opacity: 0.6;
+}
+#addTaskInput:focus{
+    outline: none;
+    border-bottom: 6px solid #22577A;
+}
+
+#addButton{
+
+    padding: 1vw 2vw;
+        background: #C7F9CC;
+        border: none;
+        color: #22577a;
+        font-size: 1.6vw;
+        border-radius: 5vw;
+        cursor: pointer;
+}
+.todo{
+    display: flex;
+    flex-direction: row;
+    padding: 0.5vw;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    margin-top: 1.5vw;
+    border-radius: 1vw;
+}
+.todo .done{
+    color: green;
+    cursor: pointer;
+    margin: 1vw;
+}
+.todo  .remove{
+    color: red;
+    cursor: pointer;
+}
+.done_list{
+    margin-top: 3vw;
+    border: 5px solid #75db96;
+    border-radius: 3vw;
+    padding: 1vw;
+    position: relative;
+}
+.tasks {
+    position: relative;
+}
+.done_list::after{
+    content: 'Done List';
+    position: absolute;
+    color: white;
+    top: -10px;
+    left: 45px;
+    background: #38a3a5;
+    padding: 0 0.2vw;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
